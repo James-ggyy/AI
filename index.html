@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI英文作文批改器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 初始顯示圖片 -->
+        <div id="image-section" class="image-section">
+            <h2>請點擊圖片改作文</h2>
+            <img src="https://image-resizer.parenting.com.tw/resize/uri/https%3A%2F%2Fflipedu-cdn.parenting.com.tw%2Fimage%2Farticle%2F2018-06-22%2F765aaf4247a7ce13fc5db2d7a826e334-277356.jpg/?format=webp&w=800" alt="Click to edit your essay" id="edit-image" />
+        </div>
+
+        <!-- 輸入框隱藏 -->
+        <div id="editor-section" class="editor-section" style="display: none;">
+            <h2>輸入您的作文題目</h2>
+            <textarea id="title-input" placeholder="請在此輸入..." rows="10" cols="50"></textarea>
+            <h2>輸入您的作文</h2>
+            <textarea id="essay-input" placeholder="請在此輸入..." rows="10" cols="50"></textarea>
+            <button id="submit-btn">確認批改</button>
+        </div>
+
+        <!-- 顯示結果 -->
+        <div id="result-section" class="result-section" style="display: none;">
+            <h3>Revised Essay:</h3>
+            <p id="revised-essay"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
